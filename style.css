@@ -1,0 +1,76 @@
+body {
+  background-image: url('page-background.jpg');
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(0, 0, 0,.8);
+}
+header > p {
+padding: 25px;
+color: white;
+font-size: 40px;
+}
+
+main {
+  display: inline-flex;
+  padding: 100px;
+  width: 100%;
+  place-content: center;
+
+}
+
+main > section {
+  max-height: 400px;
+  margin-left: 100px;
+  background-color: rgb(143, 0, 0,.8);
+  overflow-y: scroll;
+}
+#info {
+  margin: 100px 50px;
+}
+
+main > aside {
+  height: 30%;;
+  background-color: rgb(143, 0, 0,.8);
+
+}
+
+main aside > * {
+  margin: 20px;
+}
+
+#cars {
+  display: inline-grid;
+  color: white;
+  text-align: center;
+}
+#cars > * {
+  margin: 5px;
+}
+
+table td {
+  border: solid;
+  border-color: white;
+  padding: 5px 20px;
+  text-align: center;
+  color: white;
+}
+
+table thead td {
+  background-color: black;
+}
+
+table tbody td {
+  background-color: #3D3D3D;
+}
+
+#total {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}

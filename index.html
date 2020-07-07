@@ -4,29 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-
+    <p>Garagi</p>
   </header>
   
   <main>
     <aside>
-      <form>
+      <form id="cars">
         <label for="car">Car Model</label>
-        <input type="text" name="car">
-        <label for="">Year Model</label>
-        <input type="text" name="year">
+        <input type="text" name="car" required>
+        <label for="year">Year Model</label>
+        <input type="number" name="year" placeholder="2010" required min="1885" max="2021">
         <label for="countries">Manufacturer</label>
         <select id="countries">
-        <input type="submit" value="Submit">
+          <option value="germany">Germany</option>
+          <option value="korea">Korea</option>
+          <option value="japan">Japan</option>
+          <option value="france">France</option>
+          <option value="usa">USA</option>
         </select>
+        <input type="submit" value="Submit">
       </form>
     </aside>
+
     <section>
-      
+      <div id="info">
+        <table id="table">
+          <thead>
+            <tr>
+              <td>Car Model</td>
+              <td>Year Model</td>
+              <td>Price</td>
+              <td>Manufacturer</td>
+              <td>Delete</td>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+        </table>
+        <article id="total"></article>
+      </div>
     </section>
+    
   </main>
 </body>
 <script src="app.js"></script>
